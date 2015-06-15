@@ -1,6 +1,7 @@
 import fresh_tomatoes
 import media
 
+# My Movie Instances below, instantiated from the Media Class
 star_wars = media.Movie("Star Wars",
                         "The Force Awakens - Episode VII",
                         "https://upload.wikimedia.org/wikipedia/en/7/73/Forceawakenspromo.jpg",
@@ -38,10 +39,8 @@ jaws = media.Movie("Jaws",
                     "Richard Dreyfus, Roy Schneider, Robert Shaw")
 
 
-
+# Adding my movie instances to the movies array, to be used in the open_movies_page method below
 movies = [star_wars, interstellar, skyfall, swingers, braveheart, jaws]
-fresh_tomatoes.open_movies_page(movies)
 
-#print(media.Movie.__doc__)
-#print(media.Movie.__name__)
-#print(media.Movie.__module__)
+# Calling the open_movies_method from the fresh_tomatoes file
+fresh_tomatoes.open_movies_page(movies)
